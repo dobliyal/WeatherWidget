@@ -2,12 +2,13 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import CitySelector from './CitySelector';
 import { citiesData } from '../Data/data';
-interface WeatherData {
-  temperature: {
-      min: number;
-      max: number;
-  };
-}
+import { WeatherData } from '../utils/types';
+// interface WeatherData {
+//   temperature: {
+//       min: number;
+//       max: number;
+//   };
+// }
 
 const WeatherWidget: React.FC = ()=> {
     const [city, setCity] = useState<string>(() => localStorage.getItem('city') || 'Delhi');

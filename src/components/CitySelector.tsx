@@ -2,10 +2,11 @@ import React from 'react';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { citiesData } from '../Data/data';
-interface CitySelectorProps {
-    city: string;
-    setCity: (city: string) => void;
-}
+import { CitySelectorProps } from '../utils/types';
+// interface CitySelectorProps {
+//     city: string;
+//     setCity: (city: string) => void;
+// }
 
 const CitySelector: React.FC<CitySelectorProps> = ({ city, setCity }) => {
     return (
